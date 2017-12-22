@@ -33,8 +33,11 @@ int main()
 	}
 	fin.close();
 	// ”¼Œa À•W‚ÌŒŸõ
-	double dist = 20.0;
-	PointCloud_Point pt{ ++i,60.0,120 };
+	double dist =20.0;
+
+	cout << " (60,130)‚©‚ç”¼Œa"<< dist<<"‚Ì‹——£ˆÈ“à‚É‚ ‚éÀ•W" << endl;
+
+	PointCloud_Point pt{ ++i,60.0,130 };
 	vector<PointCloud_Point> rad_result = tree.radius_search(pt,dist*dist);
 	// Œ‹‰Êo—Í
 	cout << " x  y" << endl;
